@@ -8,22 +8,36 @@ var start = cache();
 var button =$(".choix");
 var choix ;
 var pc;
+var ok = $("#ok");
+var prenom = $('#prenom');
+var affichage1 = $("#affichage1");
+
 
 
 function cache(){
 pierre.hide();
 papier.hide();
 ciseaux.hide();
+$("#joueur").hide();
 }
-
 
 jouer.click (function()
 {
 jouer.hide();
-pierre.show();
-papier.show();
-ciseaux.show();
+$("#joueur").show();
 });
+
+ok.click(function(){
+	prenom = $("#prenom").val();
+	//.html;
+	$("#joueur").hide();
+	pierre.show();
+	papier.show();
+	ciseaux.show();
+	affichage1.html(prenom);
+});
+
+
 
 button.click(function votrechoix(event){
 	choix = $(this).html();

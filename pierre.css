@@ -14,7 +14,7 @@ body
 {
 	background-image: url("img fond 2.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	background-size: cover;
 }
 
@@ -50,4 +50,16 @@ body
 	height: 100px;
 	width: 100px;
 	color: transparent;
+}
+
+#joueur{
+	
+	color: white;
+	margin-top: -540px;
+
+}
+#affichage1{
+	font-size: 50px;
+	color: white;
+	margin-top: -600px;
 }
