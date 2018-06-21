@@ -7,15 +7,47 @@
 #choixjoueur
 {
 	text-align: center;
-	font-size: 100px;
-
+	font-size: 50px;
 }
 
 body
 {
 	background-image: url("img fond 2.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
+#jeu{
+	padding-top: 40%;
+}
+#pierre{
+	background-image: url(boutonpierre.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	color: transparent;
+}
 
+#papier
+{
+	background-image: url(boutonpapier.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	color: transparent;
+}
+
+#ciseaux{
+	background-image: url(boutonciseau.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	color: transparent;
+}
