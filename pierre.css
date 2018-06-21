@@ -1,16 +1,21 @@
 #jouer
 {
 	text-align: center;
-	font-size: 100px;
-	color: green;
-	background-color: white;
+	font-size: 50px;
 }
 
 #choixjoueur
 {
 	text-align: center;
 	font-size: 100px;
-	
+
+}
+
+body
+{
+	background-image: url("img fond 2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 
