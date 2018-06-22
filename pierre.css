@@ -18,10 +18,14 @@ body
 	background-size: cover;
 }
 
-#jeu{
+#jeu
+{
 	padding-top: 40%;
 }
-#pierre{
+
+
+#pierre
+{
 	background-image: url(boutonpierre.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -42,7 +46,8 @@ body
 	color: transparent;
 }
 
-#ciseaux{
+#ciseaux
+{
 	background-image: url(boutonciseau.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -52,13 +57,17 @@ body
 	color: transparent;
 }
 
-#joueur{
+#joueur
+{
 	
 	color: white;
 	margin-top: -540px;
 
 }
-#affichage1{
+
+
+#affichage1
+{
 	font-size: 50px;
 	color: white;
 	margin-top: -600px;

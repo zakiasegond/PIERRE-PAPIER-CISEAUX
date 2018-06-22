@@ -14,22 +14,23 @@ var affichage1 = $("#affichage1");
 
 
 
-function cache(){
-pierre.hide();
-papier.hide();
-ciseaux.hide();
-$("#joueur").hide();
+function cache()
+{
+	pierre.hide();
+	papier.hide();
+	ciseaux.hide();
+	$("#joueur").hide();
 }
 
 jouer.click (function()
 {
-jouer.hide();
-$("#joueur").show();
+	jouer.hide();
+	$("#joueur").show();
 });
 
-ok.click(function(){
+ok.click(function()
+{
 	prenom = $("#prenom").val();
-	//.html;
 	$("#joueur").hide();
 	pierre.show();
 	papier.show();
@@ -39,7 +40,8 @@ ok.click(function(){
 
 
 
-button.click(function votrechoix(event){
+button.click(function votrechoix(event)
+{
 	choix = $(this).html();
 	Choixordi();
 });
@@ -62,13 +64,16 @@ ordi=Math.round(Math.random()*2)+1;
 }
 
 
-function compare(){
-if((choix=='PIERRE') && (pc=='CISEAUX') || (choix=='PAPIER') && (pc=='PIERRE') || (choix=='CISEAUX') && (pc=='PAPIER')){
+function compare()
+{
+	if((choix=='PIERRE') && (pc=='CISEAUX') || (choix=='PAPIER') && (pc=='PIERRE') || (choix=='CISEAUX') && (pc=='PAPIER'))
+	{
 
 		alert(  pc  +   "\nVOUS AVEZ GAGNE!!!");
 
-}
-else{
-	alert(  pc +   "\nVOUS AVEZ PERDU!!!");
-}
+	}
+	else
+	{
+		alert(  pc +   "\nVOUS AVEZ PERDU!!!");
+	}
 }
