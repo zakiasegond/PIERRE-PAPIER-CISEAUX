@@ -26,7 +26,7 @@ var egalite = $('#egalite');
 var start = cache();
 
 
-function cache()
+function cache() //elle nous sert a caché toute les differentes "div" du html sauf la div "jouer".
 {
 	pierre.hide();
 	papier.hide();
@@ -44,35 +44,35 @@ function cache()
 	egalite.hide();
 }
 
-jouer.click (function()
+jouer.click (function() //cest les actions qui se realisent au clic du bouton "jouer"
 {
-	jouer.hide();
-	$("#joueur").show();
+	jouer.hide();       // hide c'est pour faire disparaitre les elements
+	$("#joueur").show();// show  c'est pour faire apparaitre les elements
 });
 
-ok.click(function()
+ok.click(function()   //".click"  permet de definir les actions au moment du clic.
 {
-	prenom = $("#prenom").val();
+	prenom = $("#prenom").val(); // ".val" permet de stocker l'element validé. 
 	$("#joueur").hide();
 	pierre.show();
 	papier.show();
 	ciseaux.show();
-	affichage1.html(prenom);
+	affichage1.html(prenom); // ca affiche la varible selectionnée dans la page html.
 	affichage2.show();
 });
 
 
 
-button.click(function votrechoix(event)
-{
+button.click(function votrechoix(event) //Attacher une fonction de gestionnaire d'événements pour un ou plusieurs événements aux éléments sélectionnés.
+{                                       // fonction pour le joueur.
 	photo1.hide();
 	photo2.hide();
 	photo3.hide();
 	photo4.hide();
 	photo5.hide();
 	photo6.hide();
-	choix = $(this).html();
-	if (choix == 'PIERRE'){
+	choix = $(this).html(); // "this" met en action le "event".
+	if (choix == 'PIERRE'){ // affichage photo correspondant au choix du joueur.
 		photo1.show();
 	}
 	else if (choix == 'PAPIER'){
@@ -82,7 +82,7 @@ button.click(function votrechoix(event)
 		photo3.show();
 	}
 
-	Choixordi();
+	Choixordi(); //au click ca execute la fonction " choixordi".
 
 
 });
@@ -91,8 +91,8 @@ button.click(function votrechoix(event)
 
 function Choixordi()
 {
-ordi=Math.round(Math.random()*2)+1;
-	if (ordi == 1) {
+ordi=Math.round(Math.random()*2)+1; // choix aleatoire de l'ordi.
+	if (ordi == 1) {				//affichage des photos correspondantes au choix.
 		pc = 'PIERRE';
 		photo4.show();
 
@@ -106,7 +106,7 @@ ordi=Math.round(Math.random()*2)+1;
 		photo6.show();
 	}
 
-	compare();
+	compare(); // elle execute la fonction "compare" ci dessous
 }
 
 
@@ -114,7 +114,7 @@ function compare()
 {
 	if((choix=='PIERRE') && (pc=='CISEAUX') || (choix=='PAPIER') && (pc=='PIERRE') || (choix=='CISEAUX') && (pc=='PAPIER'))
 	{
-		gagne.show();
+		gagne.show(); // affichage des differents bouton de la div resulats
 	}
 	else if (choix == pc)
 	{
@@ -125,7 +125,7 @@ function compare()
 
 }
 
-gagne.click(function(){
+gagne.click(function(){ // fonction pour cacher les images et remettre le jeu a zero.
 	gagne.hide();
 	photo1.hide();
 	photo2.hide();
