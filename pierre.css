@@ -33,6 +33,7 @@ body
 	height: 100px;
 	width: 100px;
 	color: transparent;
+	border-radius: 10px;
 }
 
 #papier
@@ -44,6 +45,7 @@ body
 	height: 100px;
 	width: 100px;
 	color: transparent;
+	border-radius: 10px;
 }
 
 #ciseaux
@@ -55,6 +57,7 @@ body
 	height: 100px;
 	width: 100px;
 	color: transparent;
+	border-radius: 10px;
 }
 
 #joueur
@@ -70,5 +73,48 @@ body
 {
 	font-size: 50px;
 	color: white;
-	margin-top: -600px;
+	margin-top: -600px;	
+	margin-left: 50px;
 }
+
+#affichage2
+{
+	font-size: 50px;
+	color: white;
+	float: right;
+	margin-top: -500px;
+	margin-right: 50px;
+}
+
+#photoaff2
+{
+	float: right;
+	margin-top: -400px;
+	margin-right: 100px;
+
+}
+
+
+#photoaff1
+{
+	float: left;
+	margin-top: -400px;
+	margin-left: 100px;
+}
+
+#resultat
+{
+	text-align: center;
+	font-size: 50px;
+	margin-top: -50px;
+}
+
+#gagne, #perdu, #egalite{
+	color:white;
+	width: 500px;
+	height: 60px;
+	font-size: 40px;
+	background-color: black;
+	border-radius: 10%;
+}
+
